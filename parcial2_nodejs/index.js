@@ -2,7 +2,7 @@ const TelegramBot = require('node-telegram-bot-api');
  const token = '586106828:AAHNCn1kochGFaU25mysxF-LQR86cDL8Dek';
 var idChar = 548250795;
  var SerialPort = require('serialport');
- var port = new SerialPort('/dev/COM9', {
+ var port = new SerialPort('/dev/cu.usbmodem1411', {
    baudRate: 57600
  });
 
