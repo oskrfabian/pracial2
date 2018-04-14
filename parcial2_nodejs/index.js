@@ -1,6 +1,6 @@
 const TelegramBot = require('node-telegram-bot-api');
  const token = '586106828:AAHNCn1kochGFaU25mysxF-LQR86cDL8Dek';
-var idChar = 548250795;
+//var idChar = 548250795;
  var SerialPort = require('serialport');
  var port = new SerialPort('/dev/COM5', {
    baudRate: 57600
@@ -22,12 +22,12 @@ var idChar = 548250795;
      miSerial.write("A");
    }
  });
- miSerial.setEncoding('utf8');
+// miSerial.setEncoding('utf8');
 
-miSerial.on('data', function(data) {
-  console.log('Data:', data);
-  if (data[0] == 'E') {
-    console.log("Boton precionado");
-    bot.sendMessage(idChar, "Precionador el boton");
-  }
-});
+//miSerial.on('data', function(data) {
+  //console.log('Data:', data);
+  //if (data[0] == 'E') {
+    //console.log("Boton precionado");
+    //bot.sendMessage(idChar, "Precionador el boton");
+//  }
+//});
