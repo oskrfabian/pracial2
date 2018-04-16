@@ -5,7 +5,7 @@ int zumbador = 6; //Pin PWM  a donde va conectado el zumbador
 
 
 void setup(){
-  pinMode(boton,INPUT_PULLUP);// para el boton
+  pinMode(boton,INPUT);// para el boton
   pinMode(zumbador, OUTPUT);// para el zumbador
 
      Serial.begin(9600);
